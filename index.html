@@ -3,39 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Info</title>
-
+    <title>Services</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f0f0f0;
-            padding: 40px;
+            background-color: #f8f8f8;
+            padding: 50px;
+            margin: 0;
         }
+
         .container {
-            max-width: 600px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
             margin: auto;
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
         }
-        h1 {
-            text-align: center;
+
+        .card {
+            background-color: white;
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            padding: 20px;
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
             color: #333;
         }
-        p { font-size: 18px; }
+
+        .card-text {
+            font-size: 1em;
+            color: #555;
+        }
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .card {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .card {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>My Personal Information</h1>
-        <p><strong>Name:</strong> Ayotah Endali</p>
-        <p><strong>Age:</strong> 20 years</p>
-        <p><strong>Location:</strong> Yaoundé, Cameroon</p>
-        <p><strong>Hobbies:</strong> Coding, Music, Football</p>
-        <p><strong>About Me:</strong> I am a student of Finnistech University.</p>
+<div class="container">
+    <div class="card">
+        <h5 class="card-title">Web Design</h5>
+        <p class="card-text">We create modern and responsive websites.</p>
     </div>
+    <div class="card">
+        <h5 class="card-title">SEO Optimization</h5>
+        <p class="card-text">Improve your search engine rankings.</p>
+    </div>
+    <div class="card">
+        <h5 class="card-title">Digital Marketing</h5>
+        <p class="card-text">Boost your online presence and engagement.</p>
+    </div>
+</div>
+    <button id="helloBtn" class="btn btn-primary mb-4">Click Me!</button>
 
+    
+
+
+    <p>A repository (repo) is a storage space where your project files are kept.</p>
+    <ul>
+        <li>Can be local (on your computer) or remote (on GitHub)</li>
+        <li>Tracks changes using version control (Git)</li>
+        <li>Allows collaboration with others</li>
+    </ul>
+
+    <h1>Commit</h1>
+    <p>A commit is a snapshot of your changes in the repository.</p>
+
+    <h1>push</h1>
+    <p>Push sends your committed changes to a remote repository.</p>
+
+    <h1>clone</h1>
+    <p>Clone creates a copy of a remote repository on your local machine.</p>
+<script>
+    document.getElementById("helloBtn").onclick = function() {
+        alert("Hello! Welcome to my website.");
+    }
+</script>
 </body>
 </html>
+
+
+<!--js button-->
+
